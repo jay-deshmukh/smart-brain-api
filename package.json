@@ -1,0 +1,31 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "db-start": "brew services start postgresql",
+    "db-stop": "brew services stop postgresql",
+    "precommit": "pretty-quick --staged",
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.2",
+    "clarifai": "^2.5.0",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "jsonwebtoken": "^8.3.0",
+    "knex": "^0.15.2",
+    "morgan": "^1.9.0",
+    "pg": "^7.4.0",
+    "redis": "^2.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3",
+    "prettier": "^1.14.2"
+  },
+  "description": ""
+}
